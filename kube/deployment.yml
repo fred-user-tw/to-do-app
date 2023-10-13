@@ -1,0 +1,18 @@
+kind: Deployment
+apiVersion: v1
+metadata:
+  name: todo-app-grupo6
+  namespace: todo-grupo6
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: todo-app
+  template:
+    metadata:
+      labels:
+        app: todo-app
+    spec:
+      containers:
+        - name: todo-app
+          image: 'armandesc84/todo-app:latest'
