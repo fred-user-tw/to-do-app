@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: todo-app
-          image: 'armandesc84/todo-app:v1.0'
+          image: 'armandesc84/todo-app:latest'

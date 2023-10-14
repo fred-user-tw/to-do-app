@@ -7,5 +7,4 @@ COPY ./public ./public
 COPY ./src ./src
 
 ENV NODE_OPTIONS=--openssl-legacy-provider
-RUN npm run build
 CMD ["npm", "start"]
