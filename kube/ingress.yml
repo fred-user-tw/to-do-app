@@ -14,5 +14,5 @@ spec:
                 name: todo-service
                 port:
                   number: 8080
-                namespace: todo-grupo6
+                
           
