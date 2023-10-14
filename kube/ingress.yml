@@ -2,14 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress-rule
-  annotations:
-    kubernetes.io/spec.ingressClassName: "nginx"
 spec:
   rules:
     - http:
         paths:
           - pathType: Prefix
-            path: /
+            path: /todo
             backend:
               service:
                 name: todo-service
