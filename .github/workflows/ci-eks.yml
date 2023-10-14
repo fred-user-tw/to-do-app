@@ -23,7 +23,7 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker buildx build -t todo-app -f deploy/prod.Dockerfile .
+        docker build -t todo-app -f deploy/prod.DockerFile .
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
         docker tag todo-app ${{ secrets.DOCKER_USERNAME }}/todo-app:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/todo-app:latest
