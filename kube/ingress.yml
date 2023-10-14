@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: ingress-rule
   namespace: todo-grupo6
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
     - http:
