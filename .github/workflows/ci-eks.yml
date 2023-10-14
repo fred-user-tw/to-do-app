@@ -39,6 +39,7 @@ jobs:
 
     - name: Deploy to EKS
       run: |
+        kubectl -n todo-grupo6 delete deployment todo-app-grupo6
         kubectl apply -f kube/namespace.yml
         kubectl apply -f kube/deployment.yml
         kubectl apply -f kube/service.yml
